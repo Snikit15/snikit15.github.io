@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rohit Parmar | Machine Learning &amp; GenAI Engineer</title>
+<meta name="description" content="Rohit Parmar: M.Sc. Digital Technologies (Machine Learning) student and former DevOps engineer. GenAI, multi-agent systems, reinforcement learning and robotics simulation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1c1a22;--muted:#5d5a66;--paper:#f2f1f5;--panel:#fff;--plum:#4b1d3f;--plum-2:#7a2e63;--line:#d9d6e0;--teal:#17695f;
+--display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;--body:'Source Sans 3','Segoe UI',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:18px/1.6 var(--body);color:var(--ink);background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--plum-2);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header.top{position:sticky;top:0;z-index:5;background:rgba(242,241,245,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.brand{font:700 19px var(--display);text-decoration:none}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-weight:600;font-size:16px}
+nav a:hover{color:var(--plum)}
+.hero{padding:72px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+h1{font:700 clamp(44px,7vw,84px)/.98 var(--display);letter-spacing:-.03em;color:var(--plum)}
+.role{font:500 clamp(20px,2.6vw,28px)/1.25 var(--display);margin:22px 0 18px}
+.lead{color:var(--muted);max-width:54ch}
+.cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--plum);transition:background .2s,color .2s}
+.btn.main{background:var(--plum);color:#fff}
+.btn.main:hover{background:var(--plum-2);border-color:var(--plum-2)}
+.btn.alt:hover{background:var(--plum);color:#fff}
+.portrait{justify-self:center;width:min(100%,380px);aspect-ratio:4/5;border-radius:190px 190px 24px 24px;overflow:hidden;background:var(--plum);box-shadow:14px 14px 0 var(--teal)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.facts{background:var(--plum);color:#fff;padding:22px 0}
+.facts ul{list-style:none;padding:0;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.facts li{font-size:16px}
+.facts b{font:700 28px var(--display);display:block;line-height:1.1}
+section{padding:72px 0 0}
+h2{font:700 clamp(30px,4vw,44px)/1.1 var(--display);letter-spacing:-.02em;margin-bottom:28px}
+.two{display:grid;grid-template-columns:1fr 1.5fr;gap:48px}
+.two p+p{margin-top:16px}
+.proj{display:grid;grid-template-columns:130px 1fr;gap:28px;padding:26px 0;border-top:1px solid var(--line)}
+.proj:last-child{border-bottom:1px solid var(--line)}
+.proj .num{font:700 44px/1 var(--display);color:var(--plum)}
+.proj .num small{display:block;font:400 14px/1.3 var(--body);color:var(--muted);margin-top:6px}
+.proj h3{font:700 22px/1.25 var(--display)}
+.proj .meta{font-size:15px;color:var(--teal);font-weight:600;margin:2px 0 8px}
+.proj p{color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tags span{font-size:14px;padding:3px 12px;border-radius:999px;background:var(--panel);border:1px solid var(--line)}
+.job,.edu{padding:22px 0;border-top:1px solid var(--line)}
+.job h3,.edu h3{font:700 21px/1.3 var(--display)}
+.job .meta,.edu .meta{color:var(--teal);font-weight:600;font-size:16px;margin-bottom:8px}
+.job li,.edu li{color:var(--muted);margin-left:20px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.skill{background:var(--panel);border-left:5px solid var(--plum);padding:20px 22px;border-radius:4px 14px 14px 4px}
+.skill:nth-child(even){border-left-color:var(--teal)}
+.skill h3{font:700 19px var(--display);margin-bottom:6px}
+.skill p{font-size:16px;color:var(--muted)}
+.certs{list-style:none;padding:0}
+.certs li{display:grid;grid-template-columns:150px 1fr 100px;gap:16px;padding:14px 0;border-top:1px solid var(--line);font-size:17px}
+.certs li:last-child{border-bottom:1px solid var(--line)}
+.certs b{font-family:var(--display)}
+.certs time{text-align:right;color:var(--muted);font-size:16px}
+.note{margin-top:12px;color:var(--muted);font-size:16px}
+.contact{background:var(--ink);color:#fff;padding:72px 0;margin-top:72px}
+.contact h2{color:#fff}
+.contact p{max-width:54ch;color:#cfcbd8}
+.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.contact .btn{border-color:#fff;color:#fff}
+.contact .btn.main{background:#fff;color:var(--ink)}
+.contact .btn.main:hover{background:#e6dff0}
+.contact .btn.alt:hover{background:#fff;color:var(--ink)}
+footer{padding:26px 0;font-size:15px;color:var(--muted)}
+@media(max-width:780px){
+ .hero .wrap,.two{grid-template-columns:1fr}
+ .portrait{order:-1;width:min(78%,300px)}
+ .proj{grid-template-columns:1fr;gap:10px}
+ .certs li{grid-template-columns:1fr;gap:2px}.certs time{text-align:left}
+ nav a{margin-left:12px;font-size:15px}
+ .hero{padding-top:40px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="#top">Rohit Parmar</a>
+<nav aria-label="Main"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+ <div>
+  <h1>Rohit Parmar</h1>
+  <p class="role">Machine learning and GenAI engineer building agent systems for engineering problems.</p>
+  <p class="lead">M.Sc. student in Digital Technologies (Machine Learning) at TU Clausthal and Ostfalia University. Five years of DevOps at Tata Consultancy Services before moving into AI research: multi-agent simulation, retrieval-augmented generation, neuro-symbolic reasoning, reinforcement learning and robotics in simulation.</p>
+  <div class="cta"><a class="btn main" href="#projects">See my projects</a><a class="btn alt" href="#contact">Get in touch</a></div>
+ </div>
+ <div class="portrait"><img src="ATTACHMENT_REPLACE_WITH_BASE64_IMAGE" alt="Portrait of Rohit Parmar" width="560" height="560"></div>
+</div></div>
+
+<div class="facts"><div class="wrap"><ul>
+ <li><b>5 years</b>DevOps at TCS</li>
+ <li><b>5</b>AI and robotics projects</li>
+ <li><b>7</b>industry certificates</li>
+ <li><b>EN C1, DE B1</b>working languages</li>
+</ul></div></div>
+
+<section id="about"><div class="wrap two">
+ <h2>About me</h2>
+ <div>
+  <p>I am a master's student in Braunschweig, Germany, applying machine learning to autonomous and safety-critical systems. My coursework covers virtual development methods, autonomous driving, functional safety basics and requirements engineering.</p>
+  <p>Before the master's I spent five years designing, testing and deploying mission-critical systems at TCS, so I care about whether a model can be shipped, monitored and trusted, not only whether it scores well.</p>
+  <p>I am looking for an internship or master's thesis where GenAI and agent systems support engineering development, for example power electronics and electric powertrain work, evaluating models and functional modules inside a cross-functional team.</p>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <h2>Research and projects</h2>
+ <article class="proj"><div class="num">30%<small>better control stability</small></div><div>
+  <h3>Steer Bot: robotics control system</h3><div class="meta">Es-Tech, Oct 2025 to Feb 2026</div>
+  <p>Built a robotic steering system with motion planning and trajectory generation pipelines, then tuned parameters systematically to improve stability.</p>
+  <div class="tags"><span>NVIDIA Isaac Sim</span><span>ROS2</span><span>MoveIt2</span></div></div></article>
+ <article class="proj"><div class="num">20%<small>higher reasoning accuracy</small></div><div>
+  <h3>Turing Tumble: neuro-symbolic LLM reasoning</h3><div class="meta">TU Clausthal, Apr to Jul 2025</div>
+  <p>Designed a hybrid framework that combines symbolic logic with transformer-based LLMs and beat baseline LLM inference on structured reasoning.</p>
+  <div class="tags"><span>LLMs</span><span>Neuro-symbolic AI</span><span>Python</span></div></div></article>
+ <article class="proj"><div class="num">28%<small>faster convergence</small></div><div>
+  <h3>Reinforcement learning for robotic arm control</h3><div class="meta">Ostfalia University of Applied Sciences, Apr to Jul 2024</div>
+  <p>Built policy-optimisation pipelines in PyTorch and trained in NVIDIA Isaac Sim. Reward function design and a review of training data quality drove the gain.</p>
+  <div class="tags"><span>PyTorch</span><span>Isaac Sim</span><span>Reinforcement learning</span></div></div></article>
+ <article class="proj"><div class="num">25%<small>better response relevance</small></div><div>
+  <h3>Generative AI chatbot with retrieval-augmented LLM</h3><div class="meta">TU Clausthal, Oct 2023 to Feb 2024</div>
+  <p>Developed a chatbot using embeddings and RAG, with optimised similarity search and a modular, scalable inference pipeline.</p>
+  <div class="tags"><span>RAG</span><span>Embeddings</span><span>Python</span></div></div></article>
+ <article class="proj"><div class="num">2026<small>independent project</small></div><div>
+  <h3>LLMSociety: multi-agent GenAI simulation framework</h3><div class="meta">Independent project, July 2026</div>
+  <p>A React-based framework for multi-agent simulation with configurable OpenAI API integration, an offline fallback mode and a rolling-window memory architecture for agent state.</p>
+  <div class="tags"><span>Multi-agent systems</span><span>React</span><span>OpenAI API</span></div></div></article>
+ <p class="note">More code on <a href="https://github.com/Snikit15">GitHub</a>.</p>
+</div></section>
+
+<section id="experience"><div class="wrap two">
+ <h2>Experience and education</h2>
+ <div>
+  <div class="job"><h3>DevOps Engineer, Tata Consultancy Services</h3><div class="meta">Hyderabad, India, Oct 2018 to Sep 2023</div>
+   <ul><li>Designed and maintained CI/CD pipelines, cutting deployment time by 35%.</li><li>Managed Kubernetes-based distributed systems supporting scalable microservices.</li><li>Bridged DevOps and MLOps: supported training, deployment and monitoring of ML pipelines in cloud-native, mission-critical environments.</li></ul></div>
+  <div class="edu"><h3>M.Sc. Digital Technologies (Machine Learning)</h3><div class="meta">TU Clausthal and Ostfalia University of Applied Sciences, Oct 2023 to present</div>
+   <ul><li>Neural networks, deep learning, computer vision, real-time data stream processing, LLMs, RAG, generative AI, transformers.</li><li>Virtual development methods, system automation, AI in mechanical engineering and production, software for autonomous safety-critical systems, autonomous driving, requirements engineering.</li></ul></div>
+  <div class="edu"><h3>B.Tech. Computer Engineering</h3><div class="meta">Guru Nanak Dev University, Amritsar, India, 2014 to 2018</div></div>
+ </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+ <h2>Skills</h2>
+ <div class="skills">
+  <div class="skill"><h3>Programming</h3><p>Python, Java, C#, SQL, object-oriented programming</p></div>
+  <div class="skill"><h3>AI and deep learning</h3><p>Generative AI, LLMs, RAG, multi-agent systems, reinforcement learning, neuro-symbolic AI, computer vision, neural networks</p></div>
+  <div class="skill"><h3>Libraries</h3><p>PyTorch, TensorFlow, Scikit-Learn, Pandas, NumPy, Matplotlib, Hugging Face</p></div>
+  <div class="skill"><h3>Simulation and robotics</h3><p>NVIDIA Isaac Sim, ROS2, MoveIt2, MQTT</p></div>
+  <div class="skill"><h3>Tools and platforms</h3><p>Git, Docker, Kubernetes, Linux, Jupyter, Google Colab</p></div>
+  <div class="skill"><h3>Languages</h3><p>English (C1), German (B1), Hindi (native)</p></div>
+ </div>
+</div></section>
+
+<section id="certifications"><div class="wrap">
+ <h2>Certifications</h2>
+ <ul class="certs">
+  <li><b>BCG X</b><span>Data Science Job Simulation</span><time>Jul 2026</time></li>
+  <li><b>Deloitte</b><span>Technology Job Simulation (coding and development)</span><time>Jul 2026</time></li>
+  <li><b>Deloitte</b><span>Cyber Job Simulation</span><time>Jul 2026</time></li>
+  <li><b>Mastercard</b><span>Cybersecurity Job Simulation</span><time>Jul 2026</time></li>
+  <li><b>Tata</b><span>Data Visualisation: Empowering Business with Effective Insights</span><time>Jul 2026</time></li>
+  <li><b>Goldman Sachs</b><span>Software Engineering Job Simulation</span><time>Oct 2024</time></li>
+  <li><b>Siemens</b><span>Project Manager Job Simulation</span><time>Aug 2024</time></li>
+ </ul>
+ <p class="note">Issued by Forage. <a href="Certifications.pdf">Open the certificates as a PDF</a>.</p>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+ <h2>Let's talk</h2>
+ <p>I am open to internships and master's thesis topics in GenAI, agent systems and machine learning for engineering and autonomous systems.</p>
+ <div class="links">
+  <a class="btn main" href="mailto:rohit15parmar15@gmail.com">Send an email</a>
+  <a class="btn alt" href="https://www.linkedin.com/in/rohit-parmar-3250121a1/">LinkedIn</a>
+  <a class="btn alt" href="https://github.com/Snikit15">GitHub</a>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap">&copy; 2026 Rohit Parmar</div></footer>
+</body>
+</html>
